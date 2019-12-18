@@ -1,0 +1,25 @@
+{
+  "name": "node-typescript-rest-api",
+  "version": "1.0.0",
+  "description": "我的node学习代码，来自http://1t.click/b5Ma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc-watch --onSuccess \"node ./dist/server.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xietao91/node-typescript-rest-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xietao91/node-typescript-rest-api/issues"
+  },
+  "homepage": "https://github.com/xietao91/node-typescript-rest-api#readme",
+  "devDependencies": {
+    "tsc-watch": "^4.0.0",
+    "typescript": "^3.7.3"
+  }
+}
