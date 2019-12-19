@@ -4,8 +4,8 @@
   "description": "我的node学习代码，来自http://1t.click/b5Ma",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsc-watch --onSuccess \"node ./dist/server.js\""
+    "dev": "tsc-watch --onSuccess \"node ./dist/server.js\"",
+    "test": "jest --coverage --verbose"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,26 @@
   "bugs": {
     "url": "https://github.com/xietao91/node-typescript-rest-api/issues"
   },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
   "homepage": "https://github.com/xietao91/node-typescript-rest-api#readme",
   "devDependencies": {
+    "@types/jest": "^24.0.24",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
     "tsc-watch": "^4.0.0",
     "typescript": "^3.7.3"
   },
